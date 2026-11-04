@@ -6,10 +6,9 @@
 #SBATCH --time=12:00:00
 #SBATCH --output=fetch_by_taxid_%j.log
 #
-# fetch_by_taxid.sh [rbcL_records.tsv]
-# Input: tab-separated table with a header and columns
+# 
+# Input: [records.tsv] tab-separated table with a header and columns made with 01_fetch_by_accesion.sh
 #   1 accession.version   2 taxid   3 species   4 length   5 title
-# (made with: efetch -format docsum | xtract -element AccessionVersion TaxId Organism Slen Title)
 # Steps:
 #   1. keep ONE accession per TaxID (the longest sequence)            -> selected.tsv, accessions.txt
 #   2. download those accessions in batches of 200 (resumable)       -> batches/*.fa, failed_batches.txt
