@@ -1,4 +1,4 @@
-# CMU_Genomics_Resources
+# CMU Genomics Resources
 This repo will help onboard students and collect common solutions to HPC programming at Colorado Mesa University, mostly built from experience with BIOL 496: Experiments in Genomics
 
 # Where do I run things?
@@ -10,4 +10,4 @@ This repo will help onboard students and collect common solutions to HPC program
 Always type `exit` when you finish an interactive session.
 
 # For example, how to initiate a short and sweet interactive job that will only last 1 hr
-sinteractive --partition=acpu --time=00:60:00 --ntasks=1 --nodes=1 --qos=cpu-normal
+`sinteractive --partition=acpu --time=00:60:00 --ntasks=1 --nodes=1 --qos=cpu-normal`
